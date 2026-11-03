@@ -125,7 +125,7 @@
 				<p id="blockedCollege" style="color: #646970;"></p>
 				<div style="background: #fcf0f1; border: 1px solid #f8d7da; padding: 15px; border-radius: 5px; margin-top: 20px; color: #721c24;">
 					<strong>عذراً، الملف محظور أو موقوف مؤقتاً.</strong>
-					<p style="margin: 5px 0 0;">الاسم: <span id="blockedDetailName"></span> | الرقم القومي: <span id="blockedDetailId"></span></p>
+					<p style="margin: 5px 0 0;">الاسم: <span id="blockedDetailName"></span> |  الاسم: <span id="blockedDetailId"></span></p>
 					<p style="margin: 5px 0 0;">الكلية: <span id="blockedDetailCollege"></span></p>
 				</div>
 				<button id="verifyAgainBlocked" class="button" style="margin-top: 20px;">بحث جديد</button>
@@ -141,7 +141,7 @@
 		/* ====== Script Integration (Data & Logic) ====== */
 		const CLIENT_1 = {
 			nationalId: '/AbdelMoneim#',
-			password: 'AbdelMoneim#azhar.2545',
+			password: 'AbdelMoneim.2545',
 			// يمكنك تغيير رابط الصورة الافتراضي هنا مباشر:
 			photo: 'https://i.postimg.cc/BZ2m5JD8/IMG-4914.jpg', 
 			name: 'عبد المنعم هشام عبد المنعم حسن حسين',
@@ -211,7 +211,7 @@
 			const password = document.getElementById('password').value;
 
 			if(nationalId.length !== 14){
-				verifyMsg.textContent = 'الرجاء إدخال رقم قومي صحيح مكوّن من 14 رقمًا.';
+				verifyMsg.textContent = 'الرجاء إدخال اسم المستخدم صحيح .';
 				verifyMsg.classList.add('err');
 				return;
 			}
